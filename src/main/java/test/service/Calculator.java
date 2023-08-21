@@ -3,9 +3,11 @@ package test.service;
 public class Calculator {
 
     public static int calculation(String num1, String num2, String operation) {
+        
         int n1 = Integer.valueOf(num1);
         int n2 = Integer.valueOf(num2);
         String op = operation.toLowerCase();
+
         switch (op) {
             case "addition":
                 return n1+n2;
