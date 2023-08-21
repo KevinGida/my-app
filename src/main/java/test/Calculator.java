@@ -2,17 +2,18 @@ package test;
 
 public class Calculator {
 
-    public static int calculation(String num1, String num2, String op) {
+    public static int calculation(String num1, String num2, String operation) {
         int n1 = Integer.valueOf(num1);
         int n2 = Integer.valueOf(num2);
+        String op = operation.toLowerCase();
         switch (op) {
-            case "ADDITION":
+            case "addition":
                 return n1+n2;
-            case "SUBSTACTION":
+            case "subtraction":
                 return n1-n2;
-            case "MULTIPLICATION":
+            case "multiplication":
                 return n1*n2;
-            case "DIVISION":
+            case "division":
                 {
                 if(n2 == 0) 
                     throw new IllegalArgumentException("Divided by zero (0)");
