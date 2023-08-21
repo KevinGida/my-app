@@ -1,4 +1,4 @@
-package test;
+package test.service;
 
 public class Calculator {
 
@@ -25,4 +25,3 @@ public class Calculator {
 
     }
 }
-
